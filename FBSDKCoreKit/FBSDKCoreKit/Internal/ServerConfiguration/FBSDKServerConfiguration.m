@@ -113,12 +113,12 @@ implicitPurchaseLoggingEnabled:(BOOL)implicitPurchaseLoggingEnabled
 
 - (BOOL)useNativeDialogForDialogName:(NSString *)dialogName
 {
-  return [self _useFeatureWithKey:FBSDKDialogConfigurationFeatureUseNativeFlow dialogName:dialogName];
+  return YES;
 }
 
 - (BOOL)useSafariViewControllerForDialogName:(NSString *)dialogName
 {
-  return [self _useFeatureWithKey:FBSDKDialogConfigurationFeatureUseSafariViewController dialogName:dialogName];
+  return NO;
 }
 
 #pragma mark - Helper Methods
